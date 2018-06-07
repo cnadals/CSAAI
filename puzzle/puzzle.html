@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src = "puzzle.js" onload = "main()"></script>
+<style>
+img{
+  width:200px;
+  height:200px;
+}
+</style>
+<title>Picture Game</title>
+</head>
+<body>
+  <h1 id = "timer"></h1>
+  <table border = "1" align = "center">
+  <tr>
+    <th><img id = "c0" src = "Images/0/White.jpeg" onclick = "ClickCarrousel('0')"></th>
+    <th><img id = "c1" src = "Images/0/White.jpeg" onclick = "ClickCarrousel('1')"></th>
+    <th><img id = "c2" src = "Images/0/White.jpeg" onclick = "ClickCarrousel('2')"></th>
+  </tr>
+
+  <table border="1" align="center">
+  <tr>
+    <th><img id = "p0" src = "Images/0/White.jpeg" onclick = "tryMove('0')"></th>
+    <th><img id = "p1" src = "Images/0/White.jpeg" onclick = "tryMove('1')"></th>
+    <th><img id = "p2" src = "Images/0/White.jpeg" onclick = "tryMove('2')"></th>
+  </tr>
+  <tr>
+    <th><img id = "p3" src = "Images/0/White.jpeg" onclick = "tryMove('3')"></th>
+    <th><img id = "p4" src = "Images/0/White.jpeg" onclick = "tryMove('4')"></th>
+    <th><img id = "p5" src = "Images/0/White.jpeg" onclick = "tryMove('5')"></th>
+  </tr>
+  <tr>
+    <th><img id = "p6" src = "Images/0/White.jpeg" onclick = "tryMove('6')"></th>
+    <th><img id = "p7" src = "Images/0/White.jpeg" onclick = "tryMove('7')"></th>
+    <th><img id = "p8" src = "Images/0/White.jpeg" onclick = "tryMove('8')"></th>
+  </tr>
+</table>
+<button type="button" onclick="chooseImage()">New Image</button>
+<button type="button" onclick="randomize()">Randomize</button>
+<button type="button" onclick="solve()">Solve</button>
+</body>
+</html>

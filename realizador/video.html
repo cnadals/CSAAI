@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<title>Realizador</title>
+</title>
+
+<body>
+
+<div style="text-align:center">
+  <video id="video2" height="150" onclick="changeVideo(1)" onmouseover="mouseOver(2, false)" onmouseout="mouseOver(2, true)" muted>
+    <source src="realizador-fuente1.mp4" type="video/mp4"></video>
+  <video id="video3" height="150" onclick="changeVideo(2)" onmouseover="mouseOver(3, false)" onmouseout="mouseOver(3, true)" muted>
+    <source src="realizador-fuente2.mp4" type="video/mp4"></video>
+  <video id="video4" height="150" onclick="changeVideo(3)" onmouseover="mouseOver(4, false)" onmouseout="mouseOver(4, true)" muted>
+    <source src="realizador-fuente3.mp4" type="video/mp4"></video>
+  <video id="video5" height="150" onclick="changeVideo(4)" onmouseover="mouseOver(5, false)" onmouseout="mouseOver(5, true)" muted>
+    <source src="realizador-fuente4.mp4" type="video/mp4"></video>
+  <br><br>
+
+  <button id="playPauseButton" onclick="playPause()">Play</button>
+  <button onclick="makeBig()">Bigger</button>
+  <button onclick="makeSmall()">Smaller</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+
+  <button id="loopButton" onclick="loopHandler()">Enable Loop</button>
+  <button>From:</button>
+  <input id="from">
+  <button>To:</button>
+  <input id="to">
+  <button onclick="setParameters()">Set Parameters</button>
+  <br><br>
+
+  <video id="video1" width="540" onmouseover="mouseOver(1, false)" onmouseout="mouseOver(1, true)" muted>
+    <source src="realizador-fuente1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <p id="TiempoV1"></p>
+</div>
+
+<script src="video.js"></script>
+
+</body>
+</html>
